@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Code With Mosh - JavaScript</title>
+<link href="styles.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet"/>
+<style>
+            .video-container {
+                width: 100%;
+                max-width: 800px;
+                margin: 20px auto;
+            }
+            .drive-iframe {
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+        </style>
+</head>
+<body>
+<header>
+<nav class="wrapper">
+<i class="fa-solid fa-angle-left arrow" id="left"></i>
+<ul class="carousel">
+<!-- Navigation items will be inserted here -->
+<li class="card"><a href="index.html">1. Getting Started</a></li>
+<li class="card"><a href="s2.html">2. Basics</a></li>
+<li class="card" id="actuel"><a href="s3.html">3. Operators</a></li>
+<li class="card"><a href="s4.html">4. Control Flow</a></li>
+<li class="card"><a href="s5.html">5. Objects</a></li>
+<li class="card"><a href="s6.html">6. Arrays</a></li>
+<li class="card"><a href="s7.html">7. Functions</a></li>
+<li class="card"><a href="s8.html">8. Getting Started OOP in JavaScript</a></li>
+<li class="card"><a href="s9.html">9. Objects</a></li>
+<li class="card"><a href="s10.html">10. Prototypes</a></li>
+<li class="card"><a href="s11.html">11. Prototypical Inheritance</a></li>
+<li class="card"><a href="s12.html">12. ES6 Classes</a></li>
+<li class="card"><a href="s13.html">13. ES6 Modules</a></li></ul>
+<i class="fa-solid fa-angle-right arrow" id="right"></i>
+</nav>
+</header>
+<!-- Navigation buttons -->
+<button class="arrow-button" id="left-arrow" onclick="navigate('s2.html')">←</button>
+<button class="arrow-button" id="right-arrow" onclick="navigate('s4.html')">→</button>
+<main>
+<!-- Video sections will be inserted here -->
+
+<section class="section" id="section15">
+<h2 class="video-title">1. 1 JavaScript Operators</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1g0pU2KWezjrJAA6ibDdYnWl96Uh2yh38/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 0)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 0)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes15" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section16">
+<h2 class="video-title">2. Arithmetic Operators</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1fsayA51A5Q5L6lesZRxIW-zrlhAQjuLZ/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 1)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 1)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes16" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section17">
+<h2 class="video-title">3. 3 Assignment Operators</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1gxm7LgBvQV9hcHFKKct1fNKibyk3nAr6/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 2)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 2)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes17" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section18">
+<h2 class="video-title">4. 4 Comparison Operators</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1hezibELfn-6OvQKtNcKURSYNT28tccOb/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 3)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 3)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes18" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section19">
+<h2 class="video-title">5. 5 Equality Operators</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1hB0WEm3HjFTAFhoMoeX5lkp45B7qjeqK/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 4)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 4)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes19" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section20">
+<h2 class="video-title">6. 6 Ternary Operators</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1hf5aTO4bHke5t7DdAtkxJNRA4hG7ssyf/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 5)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 5)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes20" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section21">
+<h2 class="video-title">7. 7 Logical Operators with Nonbooleans</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1gfa7SMYPB3SY5dvt02Y2laEPPOv2h12p/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 6)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 6)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes21" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section22">
+<h2 class="video-title">8. 8 Logical Operators with NonBooleans</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1gzSRRfIN5SFmwPSrvF_pHc478PmQz3Dn/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 7)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 7)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes22" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section23">
+<h2 class="video-title">9. BitWise Operators</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1h3m_0LJWA7sql7wDzTXmeEraeQmFwEun/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 8)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 8)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes23" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section24">
+<h2 class="video-title">10. 10 Operator Precedence</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1helDBoqpqXnJ0JGawgqdTg5c3zSivVdL/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 9)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 9)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes24" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section25">
+<h2 class="video-title">12. 12 Exercise Swapping Variables</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1gO2j3Rd4rd7qFV2EaAUYK3By_TjMqanp/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 10)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 10)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes25" placeholder="Write your notes here..."></textarea>
+</section>
+</main>
+<!-- Footer elements -->
+<div class="footer-buttons">
+<a class="home-button" href="https://brahimsaa.github.io/all" id="homeButton">
+<i class="fa-solid fa-home"></i>
+</a>
+<button id="exportButton">
+<i class="fa-solid fa-download"></i>
+</button>
+<input accept=".json" id="importButton" type="file"/>
+<button id="importDataButton">
+<i class="fa-solid fa-upload"></i>
+</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

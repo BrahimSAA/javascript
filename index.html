@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Code With Mosh - JavaScript</title>
+<link href="styles.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet"/>
+<style>
+            .video-container {
+                width: 100%;
+                max-width: 800px;
+                margin: 20px auto;
+            }
+            .drive-iframe {
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+        </style>
+</head>
+<body>
+<header>
+<nav class="wrapper">
+<i class="fa-solid fa-angle-left arrow" id="left"></i>
+<ul class="carousel">
+<!-- Navigation items will be inserted here -->
+<li class="card" id="actuel"><a href="index.html">1. Getting Started</a></li>
+<li class="card"><a href="s2.html">2. Basics</a></li>
+<li class="card"><a href="s3.html">3. Operators</a></li>
+<li class="card"><a href="s4.html">4. Control Flow</a></li>
+<li class="card"><a href="s5.html">5. Objects</a></li>
+<li class="card"><a href="s6.html">6. Arrays</a></li>
+<li class="card"><a href="s7.html">7. Functions</a></li>
+<li class="card"><a href="s8.html">8. Getting Started OOP in JavaScript</a></li>
+<li class="card"><a href="s9.html">9. Objects</a></li>
+<li class="card"><a href="s10.html">10. Prototypes</a></li>
+<li class="card"><a href="s11.html">11. Prototypical Inheritance</a></li>
+<li class="card"><a href="s12.html">12. ES6 Classes</a></li>
+<li class="card"><a href="s13.html">13. ES6 Modules</a></li></ul>
+<i class="fa-solid fa-angle-right arrow" id="right"></i>
+</nav>
+</header>
+<!-- Navigation buttons -->
+<button class="arrow-button" id="right-arrow" onclick="navigate('s2.html')">→</button>
+<main>
+<!-- Video sections will be inserted here -->
+
+<section class="section" id="section1">
+<h2 class="video-title">1. 1 Welcome</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1Xl4oZmGhF2b-GZVCljJYtf5kWB6cJSxf/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 0)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 0)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes1" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section2">
+<h2 class="video-title">2. 2 What is JavaScript</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1XjVLrUlzHT_9-xplK7le9az6FxL6nDdM/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 1)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 1)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes2" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section3">
+<h2 class="video-title">3. 3 Setting Up the Development</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1XzOoUtj0ZJtuFw6b5DWRzNwuqQMUsEu6/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 2)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 2)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes3" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section4">
+<h2 class="video-title">4. 4 JavaScript in Browsers</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1WrIfG_1uSqseMKRSMyfbpICTqsvpO30A/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 3)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 3)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes4" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section5">
+<h2 class="video-title">5. 5 Separation of Concerns</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1X3bBNMaSerdv89pXaXNJwmyHWrxO53Q6/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 4)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 4)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes5" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section6">
+<h2 class="video-title">6. 6 JavaScript in Node</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1XnRjZBuYIEgu1pc_m-M0meXntvbXV15R/preview">
+</iframe>
+</div>
+<div class="progress-navigate-container">
+<div class="progress">
+<button class="complete-btn">
+<i class="fas fa-check-circle"></i> Mark Complete
+                        </button>
+<button class="unmark-btn">
+<i class="fas fa-times-circle"></i> Unmark
+                        </button>
+</div>
+<div class="navigate">
+<button class="nav-btn prev-btn" onclick="navigateToSection('prev', 5)">
+<i class="fas fa-chevron-left"></i> Previous
+                        </button>
+<button class="nav-btn next-btn" onclick="navigateToSection('next', 5)">
+                            Next <i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</div>
+<textarea class="notes-input" id="notes6" placeholder="Write your notes here..."></textarea>
+</section>
+</main>
+<!-- Footer elements -->
+<div class="footer-buttons">
+<a class="home-button" href="https://brahimsaa.github.io/all" id="homeButton">
+<i class="fa-solid fa-home"></i>
+</a>
+<button id="exportButton">
+<i class="fa-solid fa-download"></i>
+</button>
+<input accept=".json" id="importButton" type="file"/>
+<button id="importDataButton">
+<i class="fa-solid fa-upload"></i>
+</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
